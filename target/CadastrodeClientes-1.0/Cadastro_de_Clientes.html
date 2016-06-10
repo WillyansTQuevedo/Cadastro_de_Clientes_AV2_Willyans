@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <!--somente configuração-->
+        <!--A linha abaixo é responsável pela adição do movimento maximizar e minimizar da minha página-->
+        <script type="text/java" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+        <!--A linha abaixo é responsável pelo estilo da minha página-->
+        <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+
+        <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="css/estilo.css" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Cadastro de Clientes</title>
+
+        <style>
+            .input-group-addon{
+                color: green;
+            }
+            .meucentro{
+                text-align: center;
+            }
+            
+            .lista tr:hover td {
+            }
+            
+            .cor-fundo{
+                
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!--
+        <img src="Koala.jpg" class="img-responsive" alt="Imagem responsiva" />
+        -->
+
+        <div class="container jumbotron">
+
+            <div class="alert alert-success" role="alert">
+                <h1 class="meucentro">Cadastro de Clientes</h1>
+            </div>
+
+
+            <form id="formCadastro">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1">CPF</span>
+                            <input type = "text" required name="cpf" id="cpf" maxlength = "11"  class="form-control" aria-describedby="basic-addon1" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon2">Nome</span>
+                            <input type = "text" required id="nome" maxlength = "80"  class="form-control" aria-describedby="basic-addon2" />
+
+                        </div>
+                    </div>
+                    <br/>
+                </div>	
+                <br/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon3">Estado Civil</span>
+                            <select name="estado" id="estadocivil" class="form-control" aria-describedby="basic-addon3" /><option>--Escolher uma Opção--</option>
+                            <option>Solteiro</option>
+                            <option>Casado</option></select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon4">Sexo</span>
+                            <select name="sexo" id="sexo" class="form-control" aria-describedby="basic-addon4" /><option>--Escolher Sexo--</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option></select>
+                        </div>	
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon5">Telefone</span>                                    
+                            <input type = "text"  id="telefone" maxlength = "15" class="form-control" aria-describedby="basic-addon5" />
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon6">CEP</span>
+                            <input type = "text"  id = "cep" maxlength = "9" class="form-control" aria-describedby="basic-addon6" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon7">Endereço</span>
+                            <input type = "text"  id = "endereco" maxlength = "80" disabled class="form-control" aria-describedby="basic-addon7" />
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon8">Bairro</span>
+                            <input type = "text"  id = "bairro" maxlength = "20" disabled class="form-control" aria-describedby="basic-addon8" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon9">Estado</span>
+                            <input type = "text"  id = "estado" maxlength = "80" disabled class="form-control" aria-describedby="basic-addon9" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon10">Cidade</span>
+                            <input type = "text"  id = "cidade" maxlength = "50" disabled class="form-control" aria-describedby="basic-addon10" />
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-6">  
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon11">E-mail</span>
+                            <input type = "email" required name = "email" maxlength = "40" class="form-control" aria-describedby="basic-addon11"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">   
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon12">Senha</span>
+                            <input type = "password" required name = "senha" class="form-control" aria-describedby="basic-addon12" id="senha"/>
+                        </div>
+                    </div> 
+                    <br />  
+                </div>  
+
+                <br/>
+
+                <br />	                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="obs">Obs:</label>
+                            <textarea id="percent"  class="form-control" ROWS="6" ></textarea>
+			</div>
+                    </div>
+    </div>
+    <div class="row">
+                <div class="form-group col-md-12">       
+                                        <label for="sim">Receber Promoções:</label>
+                <input  type = "checkbox" name = "sim" id="check-sim"> Sim 
+
+                        <p id="msg-cancel" >"A qualquer momento você poderá cancelar o recebimento dos e-mail´s de promoção enviando um e-mail com o assunto
+                            STOP MAIL para o endereço contato@estacio.br"</p
+                                <!--<input type = "checkbox" name = "nao" VALUE="nao" onclick="validaChekBox()">
+                                 <span name="msgPromo" id="msgPromo" class="style1" style="color:red"><!--A qualquer momento você poderá cancelar
+                                 o recebimento dos e-mail's de promação enviando um e-mail com o assunto STOP EMAIL para o endereço
+                                 Contato@estacio.br.--></span>
+            </div>
+
+                        </div>
+                                <br />
+                        <br/>
+    <div class="col-md-12 minha-classe">     
+                                    <input type = "submit"  class="btn btn-primary" name = "enviar" value = "Enviar"> 
+                                        <input type = "button"  class="btn btn-success" name = "Cancelar" value = "Cancelar">
+    </div>
+                        <br/>
+        </form>
+           
+        
+
+        <table id="tbLista" class="table table-bordered lista cor-fundo"></table>
+			
+        </div>
+			
+    </body>
+</html>
